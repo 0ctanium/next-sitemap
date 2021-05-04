@@ -18,7 +18,15 @@
   "scripts": {
     "lint": "tsc --noEmit --declaration",
     "build": "tsc && yarn build:esm",
-    "build:esm": "tsc --module es2015 --outDir dist/esm"
+    "build:esm": "tsc --module es2015 --outDir dist/esm",
+    
+    "postinstall": "echo \"postinstall\"",
+    "postpublish": "echo \"postpublish\"",
+    "preinstall": "echo \"preinstall\"",
+    "prepack": "echo \"prepack\"",
+    "prepare": "echo \"prepare\"",
+    "prepublish": "echo \"prepublish\"",
+    "install": "echo \"install\""
   },
   "dependencies": {
     "@corex/deepmerge": "^2.5.6",
