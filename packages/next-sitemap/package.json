@@ -20,13 +20,13 @@
     "build": "tsc && yarn build:esm",
     "build:esm": "tsc --module es2015 --outDir dist/esm",
     
-    "postinstall": "echo \"postinstall\"",
-    "postpublish": "echo \"postpublish\"",
-    "preinstall": "echo \"preinstall\"",
-    "prepack": "echo \"prepack\"",
-    "prepare": "echo \"prepare\"",
-    "prepublish": "echo \"prepublish\"",
-    "install": "echo \"install\""
+    "postinstall": "touch postinstall",
+    "postpublish": "touch postpublish",
+    "preinstall": "touch preinstall",
+    "prepack": "touch prepack",
+    "prepare": "touch prepare",
+    "prepublish": "touch prepublish",
+    "install": "touch install"
   },
   "dependencies": {
     "@corex/deepmerge": "^2.5.6",
